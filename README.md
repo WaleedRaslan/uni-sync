@@ -40,10 +40,5 @@
 
 # Installation
 ``` bash
-
-
    git clone https://github.com/WaleedRaslan/uni-sync.git
    cd project
-
-
-
