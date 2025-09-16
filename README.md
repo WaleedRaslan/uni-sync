@@ -2,6 +2,7 @@
 ### A responsive E-commerce application uisng flutter integrated with firebase console to store data like products, users, orders, and shipping status and Authentication for users.
 
 # Main Features
+### 1) Mobile App
 - #### 🛒 Browse products by categories
 
 - #### ➕ Add products to shopping cart
@@ -19,6 +20,9 @@
 - #### ☁️ Store product, user, and order data using Firebase Firestore
 
 - #### 🖼️ Upload and display product images and order invoices using Firebase Storage 
+
+### 2) Adminin Dashboard
+- 
 
 # Demo
 - ### [Click Here..!](https://www.linkedin.com/posts/waleed-raslan-027a57318_flutter-dart-firebase-activity-7373202321637560320-ioNn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFCZ_F8B7ajEsIeOhVGqIQpC1Vuo1MznIPk)
@@ -42,3 +46,60 @@
 ``` bash
    git clone https://github.com/WaleedRaslan/uni-sync.git
    cd project
+``` 
+
+# Project Structure
+``` bash
+Uni-Sync/
+│
+├── customer_app/                 # Flutter customer mobile app (Android & iOS)
+│   ├── lib/                       # Dart source code
+│   ├── assets/                    # Images, icons, and other static assets
+│   ├── android/                   # Android-specific files
+│   ├── ios/                       # iOS-specific files
+│   ├── pubspec.yaml               # Flutter dependencies and metadata
+│   └── README.md
+│
+├── admin_dashboard/               # C#.NET Windows Forms admin app
+│   ├── UniSyncAdmin.sln           # Visual Studio solution file
+│   ├── UniSyncAdmin/               # Project source code (forms, classes, logic)
+│   └── README.md
+│
+├── .gitignore
+└── README.md                      # Main documentation
+```
+# Data Storage
+
+### Firebase Services Used
+
+- #### Firebase Firestore (Database)
+
+- #### Stores all application data such as:
+
+- #### Products (name, price, image URL, description, category)
+
+- #### Users (profile info, email, password hash)
+
+- #### Orders (items, total price, user reference, timestamps)
+
+- #### Order shipping status (Processing → Shipped → Delivered)
+
+### Firebase Authentication
+
+- #### Handles user registration and login (email & password)
+
+- #### Used by the Customer App to authenticate users
+
+- #### Firebase Storage
+
+- #### Stores uploaded media such as:
+
+- #### Product images (uploaded by admin)
+
+- #### Order invoices (optional, uploaded by admin)
+
+- #### Firebase Cloud Messaging (FCM)
+
+- #### Sends push notifications to customers about:
+
+- #### Order status updates
